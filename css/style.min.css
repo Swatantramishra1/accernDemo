@@ -76,6 +76,10 @@ p {
 .accern_margintop2{
     margin-top:20px
 }
+.accern_ngview{
+    margin:0;
+    margin-bottom:10px;
+}
 #second_para .padding-top{
     margin-top:10%;
 }
