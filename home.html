@@ -1,7 +1,7 @@
 ﻿<!doctype html>
-<html ng-app="storeApp">
-	
+<html ng-app="app">
 <head>
+  
 		<title>Accern Website</title>
 		<meta charset="utf-8">
 		<meta name="description" content="Accern Website">
@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="plugins/owlcarousel/owl.carousel.css">
 		<link rel="stylesheet" href="css/style.min.css">
 		<link rel="stylesheet" href="css/switcher.css">
+        <link href="plugins/fonts/css/font-awesome.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/green.css" class="colors">
 
 		
@@ -44,19 +45,22 @@
 			</div>
 		</div>
 
-		<section id="hero" class="hero-slider light-typo full-height" data-height="600" >
+		<section id="accern_home" class="hero-slider light-typo full-height" data-height="600" >
 			<div id="hero-slider" class="owl-carousel owl-theme" data-autoplay="4000" data-navigation="false" data-dots="true" data-transition="fadeOut">
 					
-				<div class="item m-center" style="background-image: url(https://www.accern.com/wp-content/uploads/2017/01/redlady_black.jpg);background-position:unset">
+				<div class="item m-center in" style="background-image: url(https://www.accern.com/wp-content/uploads/2017/01/redlady_black.jpg);background-position:unset">
 					<div class="center-box">
 						<span class="overlay-bg"></span>
 						<div class="container-fluid">
-							<div class="row">
-								<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 text-center anima fade-up">
-									<div class="hero-unit">
+							<div class="row accern_margintop1" >
+								<div class="col-lg-6 col-md-6  col-sm-8  col-xs-12 text-center anima fade-up">
+									<div class="accern-unit">
 									
-										<h2>Early News Alert</h2>
-										<p>On U.S. Public Equities</p>
+                                        <div class="accern_headerText">Early News Alert</div>
+									    <div class="accern_p">On U.S. Public Equities</div>
+                                        <div class="accern_badgebottomcolor"></div>
+                                        <p class="text-justify">Get the most advanced breaking news technology for your investment strategies. Over 300 million websites are monitored in real time for early news on U.S. public equities.</p>
+                                        <div> <a class="btn btn-danger accern_btn" href="#"> <i class="fa fa-arrow-right"></i> Try Web APP </a> <a class="btn btn-default accern_btn" href="#">  Request API </a></div>
 									</div>
 								</div>
 							</div>
@@ -64,478 +68,254 @@
 					</div>
 				</div>
 
-				<div class="item m-center" style="background-image: url(https://www.accern.com/wp-content/uploads/2017/01/redlady_black.jpg);background-position:unset">
-					<div class="center-box">
-						<span class="overlay-bg"></span>
-						<div class="container-fluid">
-							<div class="row">
-								<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 text-center anima fade-up">
-									<div class="hero-unit">
-									
-										<h2>Early News Alert</h2>
-										<p>On U.S. Public Equities</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 
-				<div class="item m-center" style="background-image: url(https://www.accern.com/wp-content/uploads/2017/01/redlady_black.jpg);background-position:unset">
-					<div class="center-box">
-						<span class="overlay-bg"></span>
-						<div class="container-fluid">
-							<div class="row">
-								<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 text-center anima fade-up">
-									<div class="hero-unit">
-										
-										<h2>Early News Alert</h2>
-										<p>On U.S. Public Equities</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</section>
-		
-			
-		
-		<section id="home" class=" padding-top-bottom" ng-controller="productsController">
+		<section id="home" class=" padding-top-bottom" >
 			<div class="container">
 				<header class="section-header text-center anima fade-up">
-					<h2>Products</h2>
+					<h2 class="accern_textColor">Leader In News and Social Analytics</h2>
+                    <p class="text-center accern_textColor">In just over three years, Accern has rapidly grown to become the market leader in the news and social analytics space in terms of content coverage. Trading alerts and analytics are derived from relevant finance-related news processed on over 300 million websites in real time for institutional investors.</p>
 				</header>
 			</div>
 			<div class="container">
 				<div id="projects-container" class="row">
-					<article class="design product col-xs-12 col-sm-6 col-md-4 anima fade-up">
-						<div class="img-box">
-							<div class="hover-mask2"></div>
-							<span class="product-icon icon-eye"></span>
-							<img class="img-responsive project-image" src="img/product1.jpg" alt="">
-						</div>
-						<div class="product-info col-md-12">
-							<p class="project-price">$700</p>
-							<div>
-								<h4 class="project-title">{{::items[0]['name']}}</h4>
-							</div>
-						</div>
-						<div class="sr-only project-description"  data-oldprice="$800" data-images="img/01.jpg,img/02.jpg,img/03.jpg,img/04.jpg,img/05.jpg">
-							<p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-						</div>
+					<article class="design product col-xs-12 col-sm-6 col-md-3">
+					<div class="col-md-12 text-center">
+                        <i class="fa fa-newspaper-o accern_fafontSize fa-4x accern_color"></i>
+                    </div>	
+                        <div class="col-md-12 text-center">
+                            <h3 class="accern_textColor">News Coverage</h3>
+                            <p class="text-center  accern_subtextcolor accern_subtextSize">We currently have the largest finance news coverage in the world by monitoring 300 million news websites, blogs, and social media feeds such as Twitter.</p>
+                        </div>		
 					</article>
-					
-					<article class="mock-up product col-xs-12 col-sm-6 col-md-4 anima fade-up d1">
-						<div class="img-box">
-							<div class="hover-mask2"></div>
-							<span class="product-icon icon-eye"></span>
-							<img class="img-responsive project-image" src="img/product2.jpg" alt="">
-						</div>
-						<div class="product-info col-md-12">
-							<p class="project-price">$400</p>
-							<div>
-								<h4 class="project-title">Nightstand</h4>
-							</div>	
-						</div>
-						<div class="sr-only project-description" data-images="img/06.jpg,img/07.jpg,img/08.jpg,img/09.jpg">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-							<p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
-						</div>
-					</article>
-					
-					<article class=" icons product col-xs-12 col-sm-6 col-md-4 anima fade-up d2">
-						<div class="img-box">
-							<div class="hover-mask2"></div>
-							<span class="product-icon icon-eye"></span>
-							<img class="img-responsive project-image" src="img/product3.jpg" alt="">
-						</div>
-						<div class="product-info col-md-12">
-							<p class="project-price">$600</p>
-							<div>
-								<h4 class="project-title">Hammock</h4>
-							</div>	
-						</div>
-						<div class="sr-only project-description" data-oldprice="$700" data-images="img/10.jpg,img/11.jpg,img/12.jpg">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-							<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
-						</div>
-					</article>
+                    <article class="design product col-xs-12 col-sm-6 col-md-3">
+                        <div class="col-md-12 text-center">
+                            <i class="fa fa-clock-o accern_fafontSize fa-4x accern_color"></i>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <h3 class="accern_textColor">Low-Latency</h3>
+                            <p class="text-center  accern_subtextcolor accern_subtextSize">In a few milliseconds, Accern captures articles as soon as they are published online and derives trading analytics to be delivered to customers.</p>
+                        </div>
+                    </article>
+                    <article class="design product col-xs-12 col-sm-6 col-md-3">
+                        <div class="col-md-12 text-center">
+                            <i class="fa fa-check-circle-o accern_fafontSize fa-4x accern_color"></i>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <h3 class="accern_textColor">News Quality</h3>
+                            <p class="text-center  accern_subtextcolor accern_subtextSize">We provide news that are relevant to U.S. public equities 99% of the time, using our proprietary algorithms built solely to tackle data quality issues.</p>
+                        </div>
+                    </article>
+                    <article class="design product col-xs-12 col-sm-6 col-md-3">
+                        <div class="col-md-12 text-center">
+                            <i class="fa fa-tag accern_fafontSize fa-4x accern_color"></i>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <h3 class="accern_textColor">Affordable</h3>
+                            <p class="text-center  accern_subtextcolor accern_subtextSize">We save customers time and energy, and cut more than 50% in news data costs by helping them integrate any type of news sources they need. </p>
+                        </div>
+                    </article>
 				</div>
+                
 			</div>
-
-			<div id="project-modal" class="modal " style="display: none;" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<a class="close" href="#" data-dismiss="modal" ><i class="icon-close"></i></a>
-							<div id="project-slider" class="owl-carousel owl-theme" data-navigation="true" data-dots="true" >
-							</div>
-						</div>
-						<div class="modal-body">
-							<div class="container">
-								<div class="row">
-									<div id="project-sidebar" class="col-md-4 ">
-										<h2 id="sdbr-title">Flat UI-Kit</h2>	
-										<div>
-											<div id="sdbr-price">200</div>
-											<div id="sdbr-oldprice">500</div>
-										</div>
-									</div>
-									<div id="project-content" class="col-md-8 ">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+            
+			
 		</section>
+        <section id="second_para" class="padding-top-bottom">
+            
+            <div class="container">
+                <div id="projects-container" class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <img class="accern_width" src="https://www.accern.com/wp-content/uploads/2017/01/platform2017-1.png" />
+                    </div>
+                    <div class="col-xs-12 col-md-6 padding-top">
+                  <header class="section-header text-center anima fade-up">
+                 <h2 class="accern_textColor ">Get Tradable Alerts </h2>
+                 <p class="text-justify accern_textColor accer_p_small" >Use our web application to get early news on over 8,000 U.S. public equities sourced from over 300 million news websites, blogs, and social media feeds such as Twitter. With easy–to-use features, you can get set up in minutes and start trading on custom news alerts we deliver to you.</p>
+                </header>
+                  <div class="col-xs-12 col-md-12 accer_padding-0">
+                      <div class="panel-group" id="accordion">
+                          <div class="panel panel-default">
+                              <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#accordion" href="#accern_collapse_Trade"><i class="fa fa-arrow-right"></i> Trade On Early News</a>
+                                  </h4>
+                              </div>
+                              <div id="accern_collapse_Trade" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                      Our massive coverage of 300 million websites allows us to find and deliver early stories on U.S. public equities to our customers.
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="panel panel-default">
+                              <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#accordion" href="#accern_collapse_Build"><i class="fa fa-arrow-right"></i> Build Custom Alerts</a>
+                                  </h4>
+                              </div>
+                              <div id="accern_collapse_Build" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                      Our app allows you to build custom news alerts geared specifically towards your trading strategy. If requested, we can even help you build them.                                  </div>
+                              </div>
+                          </div>
+                          <div class="panel panel-default">
+                              <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#accordion" href="#accern_collapse_Use"><i class="fa fa-arrow-right"></i> Use Trading Analytics</a>
+                                  </h4>
+                              </div>
+                              <div id="accern_collapse_Use" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                      We derive analytics such as sentiment, impact, news exposure, news reliability rankings, and much more from each article.
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <a class="btn btn-danger accern_btn" href="#"> <i class="fa fa-arrow-right"></i> Try Web APP </a>
+                  </div>
+                    </div>
+                    
+                </div>
+                 
+            </div>
 
-		<section class="gray-bg padding-top-bottom ">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 anima fade-right">
-						<h3 class="center cta-message">Free international shipping only  <strong><span id="countdown"></span></strong></h3>
 
-					</div>
-					<div class="col-md-4 text-center anima fade-left d1">
-						<a class="btn btn-store cta-button smooth-scroll" href="#orderform" >Order Now</a>
-					</div>
-				</div>
-			</div>
-		</section>
+        </section>
+        <section id="third_para" class="padding-top-bottom ">
+
+            <div class="container">
+                <div id="projects-container padding-bottom-10 accern_margintop2" class="row">
+                    <div class="col-xs-12 col-md-6 padding-top">
+                        <header class="section-header text-center anima fade-up">
+                            <h2 class="accern_textColor ">Largest News Sentiment API Feed</h2>
+                            <p class="text-justify accern_textColor accer_p_small">Use our low-latency news sentiment API feed to build custom trading strategies or integrate it with your existing strategies. With over 300 million news websites, blogs, and social media websites, such as Twitter, monitored in real-time, we extract article meta data, company and events information, and derived trading analytics per article for our institutional customers.</p>
+                        </header>
+                        <div class="col-xs-12 col-md-12 accer_padding-0">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#accern_collapse_Flexible"><i class="fa fa-arrow-right"></i> Flexible Low-Latency API Feed</a>
+                                        </h4>
+                                    </div>
+                                    <div id="accern_collapse_Flexible" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Our push-based low-latency JSON API feed can aggregate data based on specific time frames or filter data based on companies.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#accern_collapse_API"><i class="fa fa-arrow-right"></i> API Data Fields</a>
+                                        </h4>
+                                    </div>
+                                    <div id="accern_collapse_API" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Our API data feed includes article metadata such as URLs, events, companies, and derived analytics such as sentiment.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#accern_collapse_4"><i class="fa fa-arrow-right"></i> 4 Years Of History</a>
+                                        </h4>
+                                    </div>
+                                    <div id="accern_collapse_4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            We have over four years of historical data, which includes article headlines and URLs. Historical data are provided upon request.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-default accern_btn" href="#"> <i class="fa fa-key"></i> Request API </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 accern_margintop2">
+                        <img class="accern_width" src="https://www.accern.com/wp-content/uploads/2017/01/blackwhitegirl.jpg" />
+                    </div>
+                    
+
+                </div>
+
+            </div>
+
+
+        </section>
+        <section  class="padding-top-bottom">
+            <div class="container">
+                <header class="section-header text-center">
+                    <h1 class="accern_textColor"><strong>Contact</strong></h1>
+                    <p class="accern_subtextcolor">Contact us for documentation and pricing. We will respond within 3 hours.</p>
+                </header>
+                <form action="http://demo.angelostudio.net/microstore/index.html" method="post" novalidate id="contact-form">
+                    <div class="row">
+                        <div class="col-md-2 anima fade-up d1">
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-8 anima fade-up d1">
+                                <div class="form-group">
+                                    <label class="control-label" for="contact-name">Name</label>
+                                    <div class="controls">
+                                        <input id="contact-name" name="contactName" placeholder="Your name" class="form-control input-lg requiredField" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="contact-mail">Email</label>
+                                    <div class=" controls">
+                                        <input id="contact-mail" name="email" placeholder="Your email" class="form-control input-lg requiredField" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="contact-mail">Subject</label>
+                                    <div class="controls">
+                                        <input id="contact-Subject" name="Subject" placeholder="Your Subject" class="form-control input-lg requiredField" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="contact-message">Message</label>
+                                    <div class="controls">
+                                        <textarea id="contact-message" name="comments" placeholder="Your message" class="form-control input-lg requiredField" rows="5"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-4 text-center">
+                                        <a class="btn btn-danger accern_btn" href="#"> <i class="fa fa-envelope-open"></i> Send </a>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                                <!--<p>
+                <button name="submit" type="submit" class="btn btn-store btn-block">Send Message</button>
+            </p>-->
+                                <input type="hidden" name="submitted" id="submitted3" value="true">
+                            </div>
+                        <div class="col-md-2 anima fade-up d1">
+                        </div>
+                        </div>
+                </form>
+            </div>
+        </section>
+        <footer class="footer dark-bg light-typo" >
+            <div class="container">
+                <div class="pull-left copyright accern_footer">
+                    &copy; Accern 2017. Designed by <a href="http://www.swatantra.tech/" target="_blank">Swatantra</a>.<br>
+                </div>
+            </div>
+        </footer>
 		
-		<section id="about" class="padding-top-bottom ">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 anima fadeInLeft">
-						<header class="section-header cta-message">
-							<h2>About company</h2>
-							<h4>Pellentesque interdum eget</h4>
-						</header>
-					</div>
-					<div class="col-md-8 cta-message anima fade-up">
-						<p>Pellentesque interdum eget odio eu rutrum. Nunc tempus massa a tellus aliquet sodales. Nunc urna tortor, rhoncus accumsan vestibulum non, feugiat a mauris. In hac habitasse platea dictumst. In sagittis orci nec aliquet tristique.</p>
-						<p style="display:none;" id="showme">Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-						<a class="btn btn-store outline" id="show-btn" href="#">Read more</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section id="testimonial" class="padding-top-bottom image-bg light-typo">
-			<div class="container">
-				
-				<div class="testimonial">
-					<div id="carousel-example-generic" class="carousel slide bs-docs-carousel-example" data-interval="10000">
-						<ol class="carousel-indicators">
-							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-							<li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="item active">
-								<h1>This is one of the most beautiful site I have ever seen in my life. <br>Your site is great!</h1>
-								<br>
-								<h3>Brad Cooper</h3>
-							</div>
-							<div class="item">
-								<h1>The Difference between ordinary and extraordinary <br>is just that little extra.</h1>
-								<br>
-								<h3>Albert Einstein</h3>
-							</div>
-							<div class="item">
-								<h1>Hugely thought out! <br>Trying it now.I like the use of shape and background image!</h1>
-								<br>
-								<h3>John Doe</h3>
-							</div>
-						</div>
-						<br><br><br>
-					</div>
-				</div>
-				<div class="overlay-bg"></div>
-			</div>
-		</section>
-
-		<section id="newsletter" class="light-typo dark-bg padding-top-bottom">
-			<div class="container ">
-				<header class="section-header text-center">
-					<h2>Stay in touch</h2>
-					<h4>Sign Up for Email Updates on on News & Offers</h4>
-				</header>
-				<div class="row">
-					<form id="newsletter-form" action="http://demo.angelostudio.net/microstore/index.html" method="POST" class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 ">
-						<div class="input-group">
-							<input id="newsletter-mail" name="email" placeholder="Enter your email" class="form-control input-lg" type="email" >
-							<span class="input-group-btn">
-								<button name="submit" type="submit" class="btn btn-store">Subscribe!</button>
-							</span>
-						</div>
-						<input type="hidden" name="submitted" id="submitted2" value="true">
-					</form>
-				</div>
-			</div>
-		</section>	
-
-		<section id="orderform" class="gray-bg padding-top-bottom" ng-controller="orderController">
-			<div class="container">
-				<header class="section-header text-center">
-					<h2>Order Form</h2>
-				</header>
-				<form action="http://demo.angelostudio.net/microstore/index.html" method="post" novalidate id="order-form">
-					<div class="row">
-						<div class="col-sm-12 col-md-12">
-						<table class="table">
-						  <thead>
-							<tr>
-							  <th>Product</th>
-							  <th>Unit Cost</th>
-							  <th class="text-center">
-							  <span class="hidden-xs">Quantity</span>
-							  <span class="visible-xs">QNT</span>
-							  </th>
-							  <th class="text-right">Total</th>
-							</tr>
-						  </thead>
-						  <tbody>
-							<tr>
-							  <td class="vert-align">Bed</td>
-							  <td class="vert-align">{{ 700 | currency:"$":0 }}</td>
-							  <td class="text-center">
-								<select class="form-control form-control-inline" ng-model="myBed" ng-options="opt as opt.label for opt in options"></select>
-							  </td>
-							  <td class="text-right vert-align">{{ myBed.value * 700 | currency:"$":0  }}</td>
-							</tr>							
-							<tr>
-							  <td class="vert-align">Nightstand</td>
-							  <td class="vert-align">{{ 400 | currency:"$":0  }}</td>
-							  <td class="text-center">
-								<select class="form-control form-control-inline" ng-model="myNightstand" ng-options="opt as opt.label for opt in options"></select>
-							  </td>
-							  <td class="text-right vert-align">{{ myNightstand.value * 400 | currency:"$":0  }}</td>
-							</tr>							
-							<tr>
-							  <td class="vert-align">Hammock</td>
-							  <td class="vert-align">{{ 600 | currency:"$":0  }}</td>
-							  <td class="text-center">
-								<select class="form-control form-control-inline" ng-model="myHammock" ng-options="opt as opt.label for opt in options"></select>
-							  </td>
-							  <td class="text-right vert-align">{{ myHammock.value * 600 | currency:"$":0  }}</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						  </tbody>
-						</table>
-						</div>	
-
-					<div class="col-sm-6 col-md-6 contact-info">
-						<p class="text-center"><strong>Payment Method</strong></p>
-						<div class="row">
-							<div class="col-sm-8 col-md-8">
-								<div class="form-group">
-									<label class="control-label">Name</label>
-									<input name="Card number" placeholder="Card number" class="form-control input-lg" type="text">
-								</div>
-							</div>
-							<div class="col-sm-4 col-md-4">
-								<div class="form-group">
-									<label class="control-label">Code</label>
-									<input name="Code" placeholder="Code" class="form-control input-lg" type="text" >
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-6 col-md-6">
-								<div class="form-group">
-									<label class="control-label" for="contact-mail">month</label>
-									<div class=" controls">
-										<select class="form-control">
-										  <option>January</option>
-										  <option>February</option>
-										  <option>March</option>
-										</select>
-									</div>
-								</div>	
-							</div>	
-							<div class="col-sm-6 col-md-6">
-								<div class="form-group">
-									<label class="control-label" for="contact-mail">year</label>
-									<div class=" controls">
-										<select class="form-control">
-										  <option>2014</option>
-										  <option>2015</option>
-										  <option>2016</option>
-										  <option>2017</option>
-										  <option>2018</option>
-										</select>
-									</div>
-								</div>	
-							</div>	
-						</div>	
-
-						<p class="text-center"><strong>Information</strong></p>
-						<div class="row">
-							<div class="col-sm-6 col-md-6">
-								<div class="form-group">
-									<label class="control-label">Name</label>
-									<input name="First name" placeholder="First name" class="form-control input-lg" type="text">
-								</div>
-							</div>
-							<div class="col-sm-6 col-md-6">
-								<div class="form-group">
-									<label class="control-label">Last Name</label>
-									<input name="Last name" placeholder="Last name" class="form-control input-lg" type="text" >
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="control-label" >Email</label>
-							<input name="email" placeholder="Your email" class="form-control input-lg" type="email">
-						</div>	
-						<p class="text-center"><strong>If you have Coupon code</strong></p>
-						<div class="input-group ">
-							<input placeholder="Coupon code" class="form-control input-lg" type="text" >
-							<span class="input-group-btn">
-								<button name="submit" type="submit" class="btn btn-store">Check!</button>
-							</span>
-						</div>
-
-					</div>
-					
-					<div class="col-sm-6 col-md-6">
-						<p class="text-center"><strong>Delivery address</strong></p>
-						<div class="form-group">
-							<label class="control-label">Street</label>
-							<input name="street" placeholder="Street address" class="form-control" type="text">
-						</div>	
-						<div class="form-group">
-							<label class="control-label">City</label>
-							<input name="city" placeholder="City" class="form-control" type="text">
-						</div>	
-						<div class="form-group">
-							<label class="control-label">Country</label>
-							<input name="Country" placeholder="Country" class="form-control" type="text">
-						</div>							
-						<div class="form-group">
-							<label class="control-label">postcode</label>
-							<input name="postcode" placeholder="Post code" class="form-control" type="text">
-						</div>					
-
-						<table class="table">
-						  <thead>
-							<tr>
-							  <th colspan="3" class="text-center">Order sumary</th>
-							</tr>
-						  </thead>
-						  <tbody>
-							<tr>
-							  <td>Shipping cost:</td>
-							  <td></td>
-							  <td class="text-right">Free</td>
-							</tr>
-							<tr>
-							  <td>Total:</td>
-							  <td></td>
-							  <td id="total" class="text-right">{{ (myBed.value * 700) +  (myNightstand.value * 400) + (myHammock.value * 600) | currency }}</td>
-							</tr>
-						  </tbody>
-						</table>
-						<p>
-							<button name="submit" type="submit" class="btn btn-store btn-block">Order Product</button>
-						</p>
-						<input type="hidden" name="submitted" id="submitted" value="true">
-					</div>
-
-				</div>
-					</form>
-
-			</div>
-		</section>
-
-		<section id="cta" class="padding-top-bottom color-bg light-typo">
-			<div class="container">
-				<div class="row text-center">
-					<div class="col-md-4 col-sm-4 news anima fade-up">
-						<i class="icon-trophy iconBig"></i>
-						<h3>Quality guaranteed</h3>
-					</div>
-					<div class="col-md-4 col-sm-4 news anima fade-up d1">
-						<i class="icon-truck iconBig"></i>
-						<h3>Home delivery</h3>
-					</div>
-					<div class="col-md-4 col-sm-4 anima fade-up d2">
-						<i class="icon-lock iconBig"></i>
-						<h3>Secure payment</h3>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="contact" class="gray-bg padding-top-bottom">
-			<div class="container">
-				<header class="section-header text-center">
-					<h1><strong>Contact</strong></h1>
-					<p>Do you have some kind of problem with our products?</p>
-				</header>
-				<form action="http://demo.angelostudio.net/microstore/index.html" method="post" novalidate id="contact-form">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-4 contact-info cta-message anima fade-right">
-							<address>
-								<strong>microStore</strong><br>
-								84 State Road 123<br>
-								City, State 24813<br>
-								(123) 456 - 7890<br>
-								contact@companyname.com
-							</address>
-						</div>	
-
-						<div class="col-xs-12 col-sm-12 col-md-8 anima fade-up d1" >
-							<div class="form-group">
-								<label class="control-label" for="contact-name">Name</label>
-								<div class="controls">
-									<input id="contact-name" name="contactName" placeholder="Your name" class="form-control input-lg requiredField" type="text">
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="control-label" for="contact-mail">Email</label>
-								<div class=" controls">
-									<input id="contact-mail" name="email" placeholder="Your email" class="form-control input-lg requiredField" type="email">
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="control-label" for="contact-message">Message</label>
-								<div class="controls">
-									<textarea id="contact-message" name="comments" placeholder="Your message" class="form-control input-lg requiredField" rows="5"></textarea>
-								</div>
-							</div>
-							<p>
-								<button name="submit" type="submit" class="btn btn-store btn-block">Send Message</button></p>
-							<input type="hidden" name="submitted" id="submitted3" value="true">
-						</div>
-					</div>
-				</form>
-			</div>
-		</section>
-
-		<footer id="main-footer" class="dark-bg light-typo">
-			<div class="container">
-				<p class="pull-left copyright">&copy; Accern 2017. <br> Designed by <a href="http://www.swatantra.tech/" target="_blank">Swatantra</a>.<br>
-				</p>
-
-				
-			</div>
-		</footer>
 
 		
 		
 		<script type="text/javascript" src="plugins/plugins.js"></script>
+
+
+		<!-- Custome JS -->
+        <script src="Script/module/app.js"></script>
+        <script src="Script/controller/home.Ctrl.js"></script>
 		<script type="text/javascript" src="js/custom2.min.js"></script>
 		<script type="text/javascript" src="js/ga.js"></script>
 	</body>
