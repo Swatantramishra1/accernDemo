@@ -67,11 +67,12 @@ display:none;
 color:black;
 font-weight:600;
   }
-  .accern_resourceExample:hover
+  .accern_resourceExample:hover 
   {
     background-color: rgb(242, 78, 78);
     color:black !important;
     font-size:18px;
+  
    }
 
 
@@ -79,12 +80,25 @@ font-weight:600;
 .accern_article_padding{
     padding-top: 7%;
 }
+#companylist .headerList
+{
+    margin-bottom:7%;
+}
 p {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 20px;
+}
+.accern_img img {
+    vertical-align: middle;
+    display: block;
+    max-width: 100%;
+    max-height: 80px;
+}
+.accern_img img {
+    border: 0;
 }
 .accern_marginbottom{
     margin-bottom:30px;
@@ -100,6 +114,12 @@ p {
 }
 .accern_margintop3{
     margin-top:10%;
+}
+.accer_image{
+    max-height: 80px;
+    margin: auto;
+    transition: transform 0.3;
+    margin-top: 20%;
 }
 .accern_width{
     width:100%;
@@ -531,7 +551,6 @@ table {
 }
 .product {
     position: relative;
-    margin-bottom: 30px;
     overflow: hidden;
     display: block;
 }
