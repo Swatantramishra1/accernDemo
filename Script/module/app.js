@@ -13,6 +13,19 @@ app.config(function ($stateProvider, $urlRouterProvider) {
           templateUrl: "../../view/dashboard.html",
           controller: "home.Ctrl"
       })
-       
-
+       .state('Company', {
+           url: "/Company",
+           templateUrl: "../../view/company.html",
+           controller: "home.Ctrl"
+       })
+    .state('Resource', {
+        url: "/Resource",
+           templateUrl: "../../view/resource.html",
+           controller: "home.Ctrl"
+    })
+    .state('Contact', {
+        url: "/Contact",
+        templateUrl: "../../view/contact.html",
+        controller: "home.Ctrl"
+    })
 });
