@@ -32,10 +32,11 @@
 				</div>
 				<div class="collapse navbar-collapse">
 					<ul id="navigation" class="nav navbar-nav navbar-right text-center">
-						<li><a ui-sref="Index" href="#home">Home</a></li>
-						<li><a ui-sref="Company">Company</a></li>
-						<li><a ui-sref="Resource">Resource</a></li>
-						<li><a ui-sref="Contact">Contact</a></li>
+						<li><a ui-sref="Index"><i class="fa fa-home"></i> Home</a></li>
+						<li><a ui-sref="Company"><i class="fa fa-building"></i> Company</a></li>
+						<li><a ui-sref="Resource"><i class="fa fa-file-o"></i> Resource</a></li>
+						<li><a ui-sref="Contact"><i class="fa fa-phone"></i> Contact</a></li>
+                        <li><a href="#" ng-click="Redirect_ToLogin()" target="_blank"><i class="fa fa-user"></i> Login</a></li>
 						
 						
 
@@ -51,7 +52,7 @@
 
 		<footer class="footer dark-bg light-typo" >
 			<div class="container">
-				<div class="pull-left copyright accern_footer">
+				<div class="pull-left copyright accern_footer"><button onclick="zE.activate();">Contact Us</button>
 					&copy; Accern 2017. Designed by <a href="http://www.swatantra.tech/" target="_blank">Swatantra</a>.<br>
 				</div>
 			</div>
@@ -68,6 +69,21 @@
 		<script  src="Script/controller/home.Ctrl.js"></script>
 		<script  type="text/javascript" src="js/custom2.min.js"></script>
 		<script  type="text/javascript" src="js/ga.js"></script>
+        <script src="//assets.zendesk.com/embeddable_framework/main.js" data-ze-csp="true" async defer></script>
+        <script src="plugins/Script/zendesk.js" script-src="assets.zendesk.com"></script>
+
+        <script>
+            zE(function () {
+                zE.setLocale('de');
+                zE.identify({
+                    name: 'John Citizen',
+                    email: 'john@example.com',
+                    organization: 'VIP'
+                });
+                zE.hide();
+                zE.show();
+            });
+        </script>
 	</body>
 
 <!-- Mirrored from demo.angelostudio.net/microstore/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 20:35:10 GMT -->
